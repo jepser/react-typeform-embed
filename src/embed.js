@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import withTypeformEmbed from './with-typeform-embed'
 
-export class TypeformEmbed extends Component {
+export class TypeformEmbed extends React.Component {
   constructor (props) {
     super(props)
     this.ref = React.createRef()

@@ -2,6 +2,9 @@
   "name": "react-typeform-embed",
   "version": "1.0.0",
   "main": "lib/index.js",
+  "source": "src/index.js",
+  "module": "lib/index.mjs",
+  "unpkg": "lib/index.umd.js",
   "repository": "https://github.com/jepser/react-typeform-embed.git",
   "author": "Jepser Bernardino <jepsersk8@gmail.com>",
   "license": "MIT",
@@ -9,14 +12,14 @@
     "@babel/core": "^7.4.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.3",
-    "parcel-bundler": "^1.12.3",
+    "microbundle": "^0.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "scripts": {
-    "dev": "parce watch src/index.js -d lib/",
-    "build": "parcel build src/index.js -d lib/"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "dependencies": {
     "@typeform/embed": "^0.7.0"

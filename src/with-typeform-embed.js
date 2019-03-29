@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 function withTypeformEmbed (WrappedComponent) {
-  return class extends Component {
+  return class extends React.Component {
     state = {
       loaded: false,
       api: null,
